@@ -1,0 +1,107 @@
+@charset "utf-8";
+.pay-detail{
+    position: relative;
+    top: 5rem;left: 0;
+    width: 92%;
+    padding: 1rem 1rem 0;
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    background: #fff;
+    .pay-top{
+        display: flex;
+        border-radius: 1rem 1rem 0 0;
+        border: solid 1px #ccc;
+        margin-top: 1rem;
+        padding: 1rem 0 1.5rem 0;
+        img{
+            width: 10rem; height: 10rem;vertical-align: middle;
+        }
+        @at-root .detail-r{
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0 2rem;
+            strong{
+                margin-left: .5rem;
+                color: green;
+            }
+        }
+    }
+    .pay-bottom{
+        display: flex;
+        height: 5rem;
+        border-radius: 0 0 1rem 1rem;
+        margin-top: -1px;
+        border: solid 1px #ccc;
+        .count-l{
+            padding: 0 1rem;
+            height: 5rem;
+            width: 20%;
+            text-align: center;
+            line-height: 5rem;
+        }
+        .count-r{
+            padding: 0 1rem;
+            width: 80%;
+            height: 5rem;
+            display: flex;
+            justify-content: space-around;
+            span{
+                width: 40%;
+                text-align: center;
+                display: inline-block;
+                height: 3rem;
+                align-self: center;
+                font-size: 1.8rem;
+                border: solid 1px #ccc;
+                line-height: 3rem;
+            }
+            span:nth-child(1),span:nth-child(3){
+                width: 30%;
+            }
+        }
+    }
+    .show-img{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        background: #e7e7e7;
+        box-shadow: .3rem .3rem 1rem #ccc;
+        h2{
+           color: #939494;
+           font-size: 1.4rem;
+           font-family: "Microsoft YaHei";
+           font-weight: bold;
+           margin-bottom: 1rem;
+        }
+        p{
+            text-indent: 1.8rem;
+            line-height: 2rem;
+        }
+    }
+}
+.addCart{
+    width: 98%;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    left: 1rem;
+    z-index: 10000;
+    margin: 0 auto; 
+}
+.addCart input{
+    width: 96%;
+    height: 4rem;
+    margin: 0 auto;
+    background: #18b218;
+    text-align: center;
+    line-height: 4rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.6rem;
+}

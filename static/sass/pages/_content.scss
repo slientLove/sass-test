@@ -1,0 +1,78 @@
+@charset "utf-8";
+.content-list{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin:70px 0 -52px 0 ;
+        li{
+            width: 100%;
+            min-height: 126px;
+            box-shadow: 0 0 6px #ccf;
+            -webkit-box-shaow:0 0 6px #ccf;
+            border: solid 1px #ccc;
+            background: #fff;
+            a{  
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                .icon-top{
+                    height: 0;
+                    width: 0;
+                    position: relative;
+                    border-top: 60px solid #1aa818;
+                    border-right: 60px solid transparent;
+                    z-index: 900;
+                    cursor: pointer;
+                }
+                .icon-text{
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: 4px;
+                    left: 10px;
+                    z-index: 990;
+                    color: #fff;
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    font-size: 14px;
+                }
+                .content-wrap{
+                    width: 100%;
+                    position: absolute;
+                    top: 16px;
+                    left: 0;
+                    height: 126px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        border: none;
+                    }
+                    @at-root .content-right{
+                        margin-right: 30px;
+                        height: 96px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .title{
+                            h2{ font-weight: 600;margin-bottom: 10px;}
+                        }
+                        .text-l{ 
+                            font-size: 14px;
+                            margin-right: 20px;
+                            strong{ color: green;font-weight: normal;margin-left: 5px;}
+                        }
+                        .text-r{
+                            font-size: 14px; 
+                            margin-right: 5px;
+                            strong{ color: #ccc;font-weight: normal;margin-left: 5px;text-decoration: line-through;}
+                        }
+                    }
+                }
+            }
+        }
+}
